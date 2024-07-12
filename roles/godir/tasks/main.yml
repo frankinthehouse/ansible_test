@@ -1,0 +1,9 @@
+- name: template src file
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+   
+  with_items:
+   - { src: "{{ godir_addr4 }}", dest: "{{ godir_addr }}", mode: 755 }
+

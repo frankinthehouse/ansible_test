@@ -1,0 +1,11 @@
+---
+
+- hosts: wire-guard
+
+  vars_files:
+    - ../group_vars/all
+
+  roles:
+    - godir
+  
+  gather_facts: no
